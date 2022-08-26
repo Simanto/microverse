@@ -11,6 +11,8 @@
     flex-direction: 1 1;
     padding: 15px 30px;
     position: fixed;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #nav-bar ul {
@@ -27,17 +29,19 @@
 }
 
 #header-img{
-    width: 150px;
+    width: 100px;
     height: auto;
 }
 
 #video{
+    width: 100%;
+    height: 550px;
     position: relative;
     top: 150px;
 }
 
 #about, #contact{
-    margin: 1000px 0;
+    margin: 500px 0;
 }
 
 @media only screen and (max-width: 400px) {

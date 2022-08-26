@@ -2,8 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      #header{
+          width: 1100px;
+          background-color: #f1f1f1;
+          display: flex;
+          flex: column;
+          flex-direction: 1 1;
+          padding: 15px 30px;
+          position: fixed;
+      }
+      @media only screen and (max-width: 400px) {
+          #header{
+              width: 320px;
+              margin: 0 auto;
+          }
+      }
+    </style>
   </head>
 
   <body>
@@ -11,20 +30,20 @@
 
     <div class="container">
        <!-- Header -->
-      <header id="header">
+       <header id="header">
 
         <!-- Logo -->
-        <div id="header-img" >
+        <div>
           <a href="#">
-            <img src="./images//logo.png" alt="Logo" />
+            <img id="header-img" src="https://e7.pngegg.com/pngimages/115/523/png-clipart-product-design-brand-logo-font-demo-text-orange.png" alt="Logo" />
           </a>
         </div>
 
-        <nav id="nav-bar" >
+        <nav id="nav-bar">
           <ul>
-            <li class="nav-link"><a href='#'>Home</a> </li>
-            <li class="nav-link"><a href='#about'>About Us</a> </li>
-            <li class="nav-link"><a href='#contact'>Contact</a> </li>
+            <li><a class="nav-link" href='#home'>Home</a> </li>
+            <li><a class="nav-link" href='#about'>About Us</a> </li>
+            <li><a class="nav-link" href='#contact'>Contact</a> </li>
           </ul>
 
         </nav>
@@ -35,6 +54,8 @@
       <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/EngW7tLk6R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+      <div id="home"></div>
+
       <!-- About Us -->
       <div id="about">
         <h1>About Us Section</h1>
@@ -43,9 +64,11 @@
       <!-- Contact Us -->
       <div id="contact">
         <h1>Contact Us Section</h1>
-        <form id="form">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
           <label>Email:</label>
-          <input id="email" type="email" placeholder="Enter your email">
+          <input id="email" name="email" type="email" placeholder="Enter your email">
+          <input id="submit" type="submit" value="Submit">
+        </form>
       </div>
 
 
